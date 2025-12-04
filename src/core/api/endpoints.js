@@ -12,8 +12,14 @@ export const ENDPOINTS = {
   ADMIN_USERS: '/admin/users',
   ADMIN_USER_BY_ID: (id) => `/admin/users/${id}`,
 
-  ADMIN_BOOKINGS: '/admin/bookings',
-  ADMIN_BOOKING_BY_ID: (id) => `/admin/bookings/${id}`,
+  ADMIN_BOOKINGS: '/bookings/admin/all',
+  ADMIN_BOOKINGS_CALENDAR: '/bookings/admin/calendar',
+  ADMIN_BOOKING_BY_ID: (id) => `/bookings/admin/${id}`,
+  ADMIN_BOOKING_CREATE: '/bookings/admin/create',
+  ADMIN_BOOKING_UPDATE_STATUS: (id) => `/bookings/admin/${id}/status`,
+  ADMIN_BOOKING_MARK_PAID: (id) => `/bookings/admin/${id}/mark-paid`,
+  ADMIN_BOOKING_CANCEL: (id) => `/bookings/admin/${id}/cancel`,
+  ADMIN_BOOKING_DELETE: (id) => `/bookings/admin/${id}`,
 
   ADMIN_FLEET: '/admin/fleet',
   ADMIN_FLEET_BY_ID: (id) => `/admin/fleet/${id}`,
