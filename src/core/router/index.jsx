@@ -7,6 +7,7 @@ import DashboardPage from '../../features/admin/dashboard/pages/DashboardPage';
 import ReportsPage from '../../features/admin/reports/pages/ReportsPage';
 import InvoiceListPage from '../../features/admin/invoice/pages/InvoiceListPage';
 import CreateInvoicePage from '../../features/admin/invoice/pages/CreateInvoicePage';
+import QuotationListPage from '../../features/admin/quotations/pages/QuotationListPage';
 import { ProtectedRoute } from '../auth/ProtectedRoute';
 
 export const router = createBrowserRouter([
@@ -51,6 +52,10 @@ export const router = createBrowserRouter([
       {
         path: 'invoice/create',
         element: <CreateInvoicePage />,
+      },
+      {
+        path: 'quotations',
+        element: <QuotationListPage />,
       },
     ],
   },

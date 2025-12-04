@@ -5,6 +5,7 @@ import {
   MdDirectionsBus,
   MdAssessment,
   MdReceipt,
+  MdRequestQuote,
   MdSettings,
   MdPerson,
   MdLogout,
@@ -75,6 +76,18 @@ function Sidebar() {
         { title: 'Pending', path: '/admin/invoice?status=pending' },
         { title: 'Paid', path: '/admin/invoice?status=paid' },
         { title: 'Overdue', path: '/admin/invoice?status=overdue' },
+      ],
+    },
+    {
+      title: 'Quotations',
+      icon: MdRequestQuote,
+      path: '/admin/quotations',
+      subItems: [
+        { title: 'All Quotations', path: '/admin/quotations' },
+        { title: 'Pending', path: '/admin/quotations?status=pending' },
+        { title: 'Quoted', path: '/admin/quotations?status=quoted' },
+        { title: 'Approved', path: '/admin/quotations?status=approved' },
+        { title: 'Rejected', path: '/admin/quotations?status=rejected' },
       ],
     },
     {

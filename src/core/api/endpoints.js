@@ -27,5 +27,6 @@ export const ENDPOINTS = {
 
   ADMIN_QUOTES_ALL: '/quotes/admin/all',
   ADMIN_QUOTES_UPDATE: (id) => `/quotes/admin/${id}`,
+  ADMIN_QUOTES_SUBMIT: (id) => `/quotes/admin/${id}/submit`,
   ADMIN_QUOTES_DELETE: (id) => `/quotes/admin/${id}`,
 };
